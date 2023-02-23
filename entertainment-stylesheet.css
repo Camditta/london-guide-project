@@ -1,0 +1,267 @@
+
+.main {
+    background-color: #c7b6ff;
+}
+
+.main_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin: 0 auto;
+    height: 59vh;
+    background-color: #c7b6ff;
+    z-index: 1;
+    width: 100%;
+    max-width: 1650px;
+    padding: 0 50px;
+}
+
+.main_content h1{
+    font-size: 4rem;
+    background-color: red;
+    background-image: linear-gradient(to top, red 0%, #7165CD 100%);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.main_content p{
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #7165CD;
+}
+
+.main_img-container{
+    text-align: center;
+}
+
+#main_image{
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width: 960px){
+    .main_container{
+        height: 10vh;
+        gap: 40px;
+    }
+
+    .main_content h1{
+        font-size: 2.2rem;
+    }
+
+    .main_content p {
+        font-size: 1.5rem;
+    }
+
+    .main_img-container{
+        margin-top: 4rem;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .main_container {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-self: center;
+        width: 100%;
+        margin: 0 auto;
+        height: 40vh;
+    }
+
+    .main_content{
+        text-align: center;
+        margin-bottom: 1rem;
+        margin-top: 0.5rem;
+    }
+    .main_content h1{
+        font-size: 2.5rem;
+        margin-top: 1rem;
+    }
+
+    .main_container p{
+        margin-top: 1rem;
+        font-size: 1.75rem;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .main_content h1{
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+
+    .main_container p{
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+
+}
+
+.options {
+    background-color: #c7b6ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300vh;
+}
+
+p.purple {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #7165CD;
+}
+
+.options_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1620px;
+    margin-top: 5rem;
+}
+
+.options_card {
+    display: flex;
+    margin: 1.4rem;
+    height: 580px;
+    width: 27rem;
+    border-radius: 4px;
+    background-image: url('images/seaworld.jpg');
+    background-size: cover;
+    border-radius: 5px;
+    position: relative;
+    color:rgb(253, 71, 89);
+    transition: 0.5s ease-in;
+    box-shadow: 5px 5px 15px black;
+    overflow: hidden;
+}
+
+.options_card:nth-child(2) {
+    background-image: url('images/bm.jpg');
+}
+
+.options_card:nth-child(3) {
+    background-image: url('images/zoo.jpg');
+}
+
+.options_card:nth-child(4) {
+    background-image: url('images/lv.jpg');
+}
+
+.options_card:hover{
+    cursor: pointer;
+}
+
+.options_card:hover .stats {
+    height: 100%;
+    transition: 0.5s ease;
+}
+
+.options_card:hover .view-button{
+    visibility: visible;
+    transition-delay: 0.2s;
+}
+
+.stats {
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.8);
+    position: absolute;
+    height: 40%;
+    z-index: 2;
+    bottom: 0%;
+    border-radius: 4px;
+    padding: 1.2rem;
+    transition: 0.5s ease;
+}
+
+.stats h2{
+    color:rgb(253, 71, 89);
+}
+
+.stats p {
+    font-size: 1rem;
+    color: azure;
+    padding-top: 10px;
+}
+
+.star {
+    font-size: 1.2rem;
+    text-align: left;
+    z-index: 3;
+    bottom: 5%;
+    position: absolute;
+    left: 20px;
+}
+
+.price {
+    color: gold;
+}
+
+.card-button {
+    align-items: center;
+    display: flex;
+    z-index: 3;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.view-button {
+    visibility: hidden;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: white;
+}
+
+.view-button::after, .view-button::before {
+    border: 5px solid rgb(253, 71, 89);
+    content: "";
+    position: absolute;
+    transition: transform 0.3s ease;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 190px;
+    height: 80px;
+}
+
+.view-button:hover::after {
+    transform: translate(-5px, -5px);
+}
+
+.view-button:hover::before{
+    transform: translate(5px, 5px);
+}
+
+@media screen and (max-width: 960px){
+    .options{
+        margin-top: 15rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .caption_container {
+        margin-top: 10rem;
+    }
+
+    p.purple {
+        font-size: 1rem;
+    }
+}
+
