@@ -21,7 +21,7 @@
     text-align: center;
 }
 
-h1 {
+.main_container h1 {
     text-align: center;
     font-size: 4rem;
     background-color: red;
@@ -34,7 +34,7 @@ h1 {
     -moz-text-fill-color: transparent; 
 }
 
-h2 {
+.main_container h2 {
     text-align: center;
     font-size: 3rem;
     background-color: red;
