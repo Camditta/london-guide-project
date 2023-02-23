@@ -22,6 +22,7 @@
 }
 
 h1 {
+    text-align: center;
     font-size: 4rem;
     background-color: red;
     background-image: linear-gradient(to top, red 0%, #7165CD 100%);
@@ -34,6 +35,7 @@ h1 {
 }
 
 h2 {
+    text-align: center;
     font-size: 3rem;
     background-color: red;
     background-image: linear-gradient(to top, red 0%, #7165CD 100%);
