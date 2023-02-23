@@ -1,0 +1,46 @@
+.main {
+    background-color: #c7b6ff;
+}
+
+.main_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin: 0 auto;
+    height: 59vh;
+    background-color: #c7b6ff;
+    z-index: 1;
+    width: 100%;
+    max-width: 1650px;
+    padding: 0 50px;
+}
+
+.main_img-container{
+    text-align: center;
+}
+
+h1 {
+    font-size: 4rem;
+    background-color: red;
+    background-image: linear-gradient(to top, red 0%, #7165CD 100%);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent; 
+}
+
+h2 {
+    font-size: 3rem;
+    background-color: red;
+    background-image: linear-gradient(to top, red 0%, #7165CD 100%);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
